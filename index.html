@@ -6,7 +6,31 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="indexstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="css/reveal-it.css" rel="stylesheet" type="text/css" />                
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/reveal-it.js"></script> 
+        <script>
+          $("document").ready(function() {
+            $("p").click(function(){
+              $(this).fadeOut();
+              $(this).fadeIn();
+            });
+
+            $("h1").click(function(){
+              $(this).fadeOut();
+              $(this).fadeIn();
+            });
+
+            $("a").click(function(){
+              $(this).animate("shake");
+              $(this).fadeIn();
+            });
+});
+        </script> 
     </head>
+
 
     <body>
         <header>
@@ -30,19 +54,18 @@
         </header>
 
         <div id="cover" class="coverflow" style="background-color:purple;">
-            <a href='https://www.instagram.com/stories/highlights/17947386679569699/'><img src="300855.jpg"></a>
-            <a href='https://www.instagram.com/p/CTosQ4dll6k/'><img src="300856.jpg"></a>
-            <a href='https://www.instagram.com/stories/highlights/17914928449930362/'><img src="300857.jpg"></a>
-            <a href='https://www.instagram.com/p/CVKoyRUlelM/'><img src="300858.jpg"></a>
-            <a href='https://www.instagram.com/p/CR7xWgzlp94/'><img src="300859.jpg"></a>
+            <a href='#'><img src="300855.jpg"></a>
+            <a href='#'><img src="300856.jpg"></a>
+            <a href='#'><img src="300857.jpg"></a>
+            <a href='#'><img src="300858.jpg"></a>
+            <a href='#'><img src="300859.jpg"></a>
         </div>
 
         <div class="intro">
             <h1>INTRODUCTION</h1><br><br>
-            <p>人們為事物拍照是為了將其趕出心中<br>人々は物事を写真に撮って心から解放します<br><br><br>我的故事則是一種閉眼的方式<br>私の話は目を閉じる方法です。<br><br><br>邀請你來聽聽我的故事<br>私の話にあなたを招待してください</p>
+            <p id="text">人們為事物拍照是為了將其趕出心中<br>人々は物事を写真に撮って心から解放します<br><br><br>我的故事則是一種閉眼的方式<br>私の話は目を閉じる方法です。<br><br><br>邀請你來聽聽我的故事<br>私の話にあなたを招待してください</p>
             <br><a href="https://www.instagram.com/joyourlive_367/"><img src="ig.png"></a>
             <h6>林允安<br>joyourlive_367</h6>
         </div>
-        
     </body>
 </html>
